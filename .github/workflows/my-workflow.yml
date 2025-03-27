@@ -3,7 +3,7 @@ name: Manual install
 on:
   workflow_dispatch:
     inputs:
-      logLevel:
+      runTests:
         description: 'run tests'
         required: true
         default: true
@@ -32,4 +32,5 @@ jobs:
       run: npm run build
 
     - name: Test
+      if: inputs.runTests
       run: npm test
