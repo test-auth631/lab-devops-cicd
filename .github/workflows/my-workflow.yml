@@ -7,14 +7,14 @@ on:
         description: 'run tests'
         required: true
         default: "true"
-  push:
-    inputs:
-      runTests:
-        description: 'run tests'
-        required: true
-        default: "true"
-    branches:
-      - main
+  # push:
+  #   inputs:
+  #     runTests:
+  #       description: 'run tests'
+  #       required: true
+  #       default: "true"
+  #   branches:
+  #     - main
 
 jobs:
   install:
