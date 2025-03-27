@@ -30,4 +30,8 @@ describe("ComputeUtil", () => {
     expect(ComputeUtil.divide(-1, 0)).toBe(-Infinity);
     expect(ComputeUtil.divide(0, 0)).toBeNaN();
   });
+
+  test("fail", () => {
+    expect(1).toBe(0);
+  });
 });
